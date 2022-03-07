@@ -1,0 +1,15 @@
+1. Make sure you object has a collider
+2. Assign an Item script on your object
+3. In the inspector and on the script Item, Assign a unique number in the ID field (Can be anything As long as its not the same as another item)
+4. Assign the maximum ammount this item can be in 1 slot of the inventory in the Max Stack field.
+5. If your planning to make a UI with these script, Theres a sprite field for convenience.
+
+To use the inventory system, simply add it to your player object or something else and assign the number of slot the inventory will have.
+
+
+How to use in code:
+
+Grab the InventorySystem component (Usually with GetComponent)
+Call either AddItem or remove Item and pass the Item component of your object with the ammount you want to Add/Remove.
+
+For more detail go check SimpleInventorySystem/Demo/Player.cs. I made a simple pickup/drop system.
