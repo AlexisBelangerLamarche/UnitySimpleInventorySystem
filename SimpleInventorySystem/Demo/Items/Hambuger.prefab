@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 6019761919163779105}
   - component: {fileID: 2572375205454470431}
   - component: {fileID: 8739401022277061980}
-  - component: {fileID: -2167041770360756716}
+  - component: {fileID: -1312392715634870791}
   m_Layer: 0
   m_Name: Hambuger
   m_TagString: Untagged
@@ -30,7 +30,7 @@ Transform:
   m_GameObject: {fileID: 6019761919161587425}
   m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
   m_LocalPosition: {x: -8.987112, y: 3.5739343, z: 0}
-  m_LocalScale: {x: 2, y: 2, z: 2}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -42,7 +42,7 @@ MeshFilter:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6019761919161587425}
-  m_Mesh: {fileID: 4300000, guid: f9e7ed08898d80148b9f645cd07c8b8e, type: 3}
+  m_Mesh: {fileID: -3287606767947662708, guid: 3531794f00e59e64fb5975844bbb80e2, type: 3}
 --- !u!23 &6019761919163779105
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -62,7 +62,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: ffe3fc609056234419b00037ba214929, type: 2}
+  - {fileID: 2100000, guid: 9d431351800598b4ea45416ab34af449, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -93,12 +93,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 6019761919161587425}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8e7d2bf5b251a884cbe2010edc62d426, type: 3}
+  m_Script: {fileID: 11500000, guid: a361b14215885ed408b4eb9277c624c4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   ID: 2
   MaxStack: 9
-  icon: {fileID: 21300000, guid: 047419c33aa35424384230ae29cbc07b, type: 3}
+  icon: {fileID: 0}
 --- !u!54 &8739401022277061980
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -115,7 +115,7 @@ Rigidbody:
   m_Interpolate: 2
   m_Constraints: 0
   m_CollisionDetection: 2
---- !u!65 &-2167041770360756716
+--- !u!65 &-1312392715634870791
 BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -126,5 +126,5 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.3058138, y: 0.26526737, z: 0.31463268}
-  m_Center: {x: 0.000000059604645, y: 0.022450514, z: -0.0020236224}
+  m_Size: {x: 0.776767, y: 0.67377913, z: 0.79916704}
+  m_Center: {x: 0.00000016391277, y: 0.057024315, z: -0.0051400065}

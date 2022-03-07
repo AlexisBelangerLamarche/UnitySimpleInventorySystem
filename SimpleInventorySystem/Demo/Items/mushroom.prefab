@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 593908004069411906}
   - component: {fileID: 3054959742657885412}
   - component: {fileID: 952897705275673970}
-  - component: {fileID: -3764810137553163086}
+  - component: {fileID: 8537457813104153152}
   m_Layer: 0
   m_Name: mushroom
   m_TagString: Untagged
@@ -30,7 +30,7 @@ Transform:
   m_GameObject: {fileID: 593908004071608962}
   m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
   m_LocalPosition: {x: -7.1999993, y: 2.3999999, z: 0}
-  m_LocalScale: {x: 2, y: 2, z: 2}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -42,7 +42,7 @@ MeshFilter:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 593908004071608962}
-  m_Mesh: {fileID: 4300000, guid: b53fab1a8a71cf745ad1af6d16214489, type: 3}
+  m_Mesh: {fileID: -7588155868070637639, guid: bb20ec69e6638b6469974ba17a7e4f09, type: 3}
 --- !u!23 &593908004069411906
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -62,7 +62,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: e856e0e4091111a4da3fcfe0845191cb, type: 2}
+  - {fileID: 2100000, guid: 79e35c4b6c637754f9b6910bce4027b0, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -93,12 +93,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 593908004071608962}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8e7d2bf5b251a884cbe2010edc62d426, type: 3}
+  m_Script: {fileID: 11500000, guid: a361b14215885ed408b4eb9277c624c4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   ID: 3
   MaxStack: 100
-  icon: {fileID: 21300000, guid: 474be5d62c41a3c4aa3c73f186c7960b, type: 3}
+  icon: {fileID: 0}
 --- !u!54 &952897705275673970
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -115,7 +115,7 @@ Rigidbody:
   m_Interpolate: 2
   m_Constraints: 0
   m_CollisionDetection: 2
---- !u!136 &-3764810137553163086
+--- !u!136 &8537457813104153152
 CapsuleCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -125,7 +125,7 @@ CapsuleCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  m_Radius: 0.19465832
-  m_Height: 0.39258134
+  m_Radius: 0.49443215
+  m_Height: 0.9971567
   m_Direction: 1
-  m_Center: {x: 0.000102862716, y: 0.00000009685755, z: 0.000109657645}
+  m_Center: {x: 0.00026127696, y: 0.00000023841858, z: 0.0002785474}
