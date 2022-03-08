@@ -96,6 +96,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a361b14215885ed408b4eb9277c624c4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Name: Orange
   ID: 4
   MaxStack: 20
   icon: {fileID: 0}

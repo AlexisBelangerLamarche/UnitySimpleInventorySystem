@@ -12,6 +12,7 @@ public class Slot // Class so i can store multiple value in an array
     public int Ammount;
     public int ItemMaxStack;// Copy the item class so its possible to delete the object attached to it
     public Sprite ItemIcon; //
+    public string ItemName; //
 }
 
 public class InventorySystem : MonoBehaviour
@@ -46,6 +47,7 @@ public class InventorySystem : MonoBehaviour
 
             if (!slot.HasItem)// If theres no item in the slot add {item} to it. Copy everything from the class so its possible to delete the object attached to it.
             {
+                slot.ItemName = item.Name;
                 slot.ItemId = item.ID;
                 slot.ItemMaxStack = item.MaxStack;
                 slot.ItemIcon = item.icon;
@@ -79,6 +81,7 @@ public class InventorySystem : MonoBehaviour
 
                 if (slot.Ammount <= 0)// If the the ammount of item as reached 0, Reset the slot.
                 {
+                    slot.ItemName = "None";
                     slot.Ammount = 0;
                     slot.HasItem = false;
                     slot.ItemIcon = null;
@@ -114,11 +117,25 @@ public class InventorySystem : MonoBehaviour
         slots[slotNumber].Ammount -= ammount;
         if (slots[slotNumber].Ammount <= 0)
         {
+            slots[slotNumber].ItemName = "None";
             slots[slotNumber].Ammount = 0;
             slots[slotNumber].HasItem = false;
             slots[slotNumber].ItemIcon = null;
             slots[slotNumber].ItemMaxStack = 0;
             slots[slotNumber].ItemId = 0;
+        }
+    }
+
+    public void ClearAll()// Clear all the item in the inventory
+    {
+        foreach (Slot slot in slots)
+        {
+            slot.ItemName = "None";
+            slot.HasItem = false;
+            slot.ItemId = 0;
+            slot.ItemIcon = null;
+            slot.ItemMaxStack = 0;
+            slot.Ammount = 0;
         }
     }
 }
